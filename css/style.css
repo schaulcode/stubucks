@@ -11,13 +11,23 @@ body{
 img{
     width: 100%
 }
-
+h2{
+    margin: 0;
+}
 .green{
     color: lightgreen;
 }
 .white{
     color: white
 }
+.divider{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
 
 /* HEADER */
 #top-bar{
@@ -50,9 +60,9 @@ img{
     text-align: center;
     padding: 15px 0px; 
 }
-#menu{
+/* #menu{
 
-}
+} */
 .menu-items{
     display: inline;
     list-style: none;
@@ -94,4 +104,42 @@ img{
     border-radius: 5px;
     border-width: 0;
 }
+
+/* SECTION NEW */
+
+#divider-white{
+    background-color: white;
+}
+#section-new{
+    background-color: black;
+    width: 100%;
+    height: 650px;
+}
+.arrow-icon-row{
+    text-align: center;
+}
+.arrow-icon{
+    margin-top: 20px;
+    width: 50px;
+    display: inline-block;
+}
+.section-new-col{
+    display: inline-block;
+}
+#new-product-img{
+    box-sizing: border-box;
+    width: 40%;
+    padding: 0 30px 0 90px;
+    vertical-align: middle;
+}
+#new-product-desc{
+    box-sizing: border-box;
+    width: 59%;
+    vertical-align: middle;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 90px;
+}
+
 
