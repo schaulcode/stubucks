@@ -69,6 +69,10 @@ h2{
     margin: 0px 25px;
     font-size: 20px;
 }
+.menu-items>a{
+    color: inherit;
+    text-decoration-line: none;
+}
 /* HERO */
 #hero{
     width: 100%;
@@ -230,4 +234,47 @@ footer a{
     display: inline-block;
     width: 74.5%;
     text-align: right;
+}
+
+
+/* MENU PAGE */
+#main{
+    background-color: white;
+}
+#menu{
+    display: inline-block;
+    width: 69.5%;
+    text-align: center;
+}
+.items{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    height: 500px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+.items>button{
+    position: absolute;
+    bottom: 10px;
+    width: 8em;
+    left: 1.5em;
+    height: 40px;
+    
+    
+}
+#order{
+    display: inline-block;
+    width: 29.5%;
+    vertical-align: top;
+    text-align: center;
+}
+#menu-sidebar{
+    display: inline-block;
+    width: 49.5%
+}
+#menu-items-section{
+    display: inline-block;
+    width: 49.5%
 }
