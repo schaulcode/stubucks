@@ -182,5 +182,31 @@ h2{
 
 /* SITEMAP */
 
+.sitemap{
+    font-size: 23px;
+    padding: 30px 200px
+}
 
-
+#sitemap-col{
+    display: inline-block;
+    width: 69.5%
+}
+.sitemap-menu{
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+}
+.sitemap-menu-list-title{
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+#social-col{
+    display: inline-block;
+    width: 29.5%;
+    vertical-align: top;
+}
+.social-icon{
+    display: inline-block;
+    width: 30px;
+    margin: 0 5px 0 0;
+}
