@@ -5,7 +5,7 @@
 body{
     margin: 0;
     background-color: lightgray;
-    padding: 1px 3px;
+    padding: 1px 3px 10px 3px;
     font-family: Gilroy;
 }
 img{
@@ -209,4 +209,25 @@ h2{
     display: inline-block;
     width: 30px;
     margin: 0 5px 0 0;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    padding: 25px 120px;
+    color: white;
+    font-size: 17px
+}
+footer a{
+    color: inherit;
+}
+#footer-col-1{
+    display: inline-block;
+    width: 24.5%
+}
+#footer-col-2{
+    display: inline-block;
+    width: 74.5%;
+    text-align: right;
 }
