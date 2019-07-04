@@ -240,11 +240,36 @@ footer a{
 /* MENU PAGE */
 #main{
     background-color: white;
+    padding: 120px;
 }
 #menu{
     display: inline-block;
     width: 69.5%;
     text-align: center;
+}
+#menu-sidebar{
+    display: inline-block;
+    width: 29.5%
+}
+#menu-cat{
+    list-style: none;
+}
+.menu-cat-list{
+    text-align: left;
+    font-size: 23px;
+    padding: 10px 0 10px 5px;
+}
+.menu-cat-list:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+#menu-items-section{
+    display: inline-block;
+    width: 69.5%;
+    vertical-align: top;
+}
+#menu-items-section>h3{
+    font-size: 27px
 }
 .items{
     display: inline-block;
@@ -258,23 +283,17 @@ footer a{
 .items>button{
     position: absolute;
     bottom: 10px;
-    width: 8em;
+    width: 130.48px;
     left: 1.5em;
     height: 40px;
-    
-    
+}
+.items:hover{
+    background-color: lightgreen;
+    cursor: pointer;
 }
 #order{
     display: inline-block;
     width: 29.5%;
     vertical-align: top;
     text-align: center;
-}
-#menu-sidebar{
-    display: inline-block;
-    width: 49.5%
-}
-#menu-items-section{
-    display: inline-block;
-    width: 49.5%
 }
