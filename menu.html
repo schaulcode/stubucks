@@ -63,11 +63,32 @@
                     <button>Add+</button>
                 </div>
             </div>
-            
-        
         </div>
         <div id="order">
             <h2>Order</h2>
+            <div id="form">
+                <form action="" method="post">
+                    <select name="drop-down" id="drop-down">
+                        <option value="pick-up">Pick Up</option>
+                        <option value="eat-in">Eat In</option>
+                        <option value="delivery">delivery</option>
+                    </select>
+                    <fieldset>
+                        <legend>LOGIN/SIGN UP</legend>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <input type="number" name="phone" id="phone" placeholder="Phone">
+                    </fieldset>
+                    <fieldset>
+                        <legend>ORDER</legend>
+                        <div id="order-items">
+                            <p>Yor don't have any orders</p>
+                        </div>
+                        <p id="total"><span>TOTAL</span><span id="amount">£0.00</span></p>
+                    </fieldset>
+                    <input type="button" value="Checkout">
+                </form>
+            </div>
         </div>
     </section>
         <section class="sitemap">
