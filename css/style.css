@@ -296,4 +296,32 @@ footer a{
     width: 29.5%;
     vertical-align: top;
     text-align: center;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+#drop-down{
+    width: 100%;
+    margin: 15px 0;
+    font-size: 19px;
+}
+#login, #order-total{
+    margin: 15px 0;
+    text-align: left;
+}
+#login>input{
+    font-size: 18px;
+    margin: 10px 0
+}
+#total{
+    position: relative;
+}
+#amount{
+    position: absolute;
+    right: 10px;
+}
+#checkout{
+    width: 100%;
+    background-color: lightgreen;
+    font-size: 23px;
+    border: none;
 }
