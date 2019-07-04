@@ -286,9 +286,14 @@ footer a{
     width: 130.48px;
     left: 1.5em;
     height: 40px;
+    border-color: lightgreen;
+    background-color: white;
 }
 .items:hover{
     background-color: lightgreen;
+    cursor: pointer;
+}
+.items>button:hover{
     cursor: pointer;
 }
 #order{
@@ -324,4 +329,7 @@ footer a{
     background-color: lightgreen;
     font-size: 23px;
     border: none;
+}
+#checkout:hover{
+    cursor: pointer;
 }
