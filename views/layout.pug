@@ -1,0 +1,37 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Stubucks
+  body
+    header
+      #top-bar
+        #promo
+          | Free shipping on orders of £30+ | Use code STULOVE > 
+          a(href='') offer details
+          | >
+        //
+          Just to remove whitespace 
+        .next-store Find nearest store
+      #logo
+        img(src='./Assets/Images/stubucks-logo.png', alt='')
+      #nav-bar
+        ul#menu
+          li.menu-items
+            a(href='') Coffe
+          li.menu-items
+            a(href='') Tea
+          li.menu-items
+            a(href='./menu') Menu
+          li.menu-items
+            a(href='') Rewards
+          li.menu-items
+            a(href='') Want to join our team?
+          li.menu-items
+            a(href='') Locations
+          li.menu-items
+            a(href='') Specials
+  block content

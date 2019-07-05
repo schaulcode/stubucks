@@ -1,0 +1,110 @@
+extends layout
+
+block content
+    section#main
+      #menu
+        h2 Menu
+        #menu-sidebar
+          ul#menu-cat
+            li.menu-cat-list Coffee
+            li.menu-cat-list Teas
+            li.menu-cat-list Soups
+        #menu-items-section
+          h3 Coffee
+          .items
+            img(src='/images/Americano.jpg', alt='')
+            h4 Americano
+            h4 12oz
+            h4 £2.00
+            p Two shots of espresso over hot water
+            button Add+
+          .items
+            img(src='/images/Americano.jpg', alt='')
+            h4 Americano
+            h4 16oz
+            h4 £2.30
+            p Four shots of espresso over hot water
+            button Add+
+          .items
+            img(src='/images/Americano.jpg', alt='')
+            h4 Cappuccino
+            h4 12oz
+            h4 £2.45
+            p Two shots of espresso topped with steam milk and foam
+            button Add+
+      #order
+        h2 Order
+        #form
+          form(action='', method='post')
+            select#drop-down(name='drop-down')
+              option(value='pick-up') Pick Up
+              option(value='eat-in') Eat In
+              option(value='delivery') delivery
+            fieldset#login
+              legend LOGIN/SIGN UP
+              input#email(type='email', name='email', placeholder='Email address')
+              input#name(type='text', name='name', placeholder='Full Name')
+              input#phone(type='number', name='phone', placeholder='Phone')
+            fieldset#order-total
+              legend ORDER
+              #order-items
+                p Yor don't have any orders
+              p#total
+                span TOTAL
+                span#amount £0.00
+            input#checkout(type='button', value='Checkout')
+    section.sitemap
+      #sitemap-col
+        dl.sitemap-menu
+          dd.sitemap-menu-list-title Help
+          dd.sitemap-menu-list My account
+          dd.sitemap-menu-list Stu Cards
+          dd.sitemap-menu-list Stu Rewards
+          dd.sitemap-menu-list Shipping & Returns
+          dd.sitemap-menu-list Current Offers
+          dd.sitemap-menu-list Contact Us
+        dl.sitemap-menu
+          dd.sitemap-menu-list-title Company Info
+          dd.sitemap-menu-list Code Ethics
+          dd.sitemap-menu-list Responsible Sourcing
+          dd.sitemap-menu-list Supply Chain
+          dd.sitemap-menu-list Limited Partners
+          dd.sitemap-menu-list Office Coffee
+        dl.sitemap-menu
+          dd.sitemap-menu-list-title About Us
+          dd.sitemap-menu-list Join Stu
+          dd.sitemap-menu-list Social Responsibility
+          dd.sitemap-menu-list Our People
+          dd.sitemap-menu-list Newsroom
+      #social-col
+        dl.sitemap-social
+          dt.sitemap-menu-list-title Share
+          dd.social-icon
+            img(src='/Icons/icon-facebook.png', alt='')
+          dd.social-icon
+            img(src='./Icons/icon-instagram.png', alt='')
+          dd.social-icon
+            img(src='/Icons/icon-linkedin.png', alt='')
+          dd.social-icon
+            img(src='/Icons/icon-twitter.png', alt='')
+          dd.social-icon
+            img(src='/Icons/icon-pinterest.png', alt='')
+    footer
+      #footer-col-1
+        p
+          | Stubucks Chester 
+          br
+          |                     Cheshire 
+          br
+          |                     Since 2019
+      #footer-col-2
+        p
+          a(href='') Stubucks Coffee
+          |  |
+          a(href='') Privacy Policy
+          |  |
+          a(href='') Terms of Service
+          |  |
+          br
+          |                     Stubucks is not a registered trademark,infact it was just something Stuart made Dan make even though
+          |                     he didn't have any spare time. But he likes designing stuff so that's OK.
