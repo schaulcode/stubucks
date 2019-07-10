@@ -6,32 +6,34 @@ block content
         h2 Menu
         #menu-sidebar
           ul#menu-cat
-            li.menu-cat-list Coffee
-            li.menu-cat-list Teas
-            li.menu-cat-list Soups
+            each list in categories
+              li.menu-cat-list #{list.category}
+              //- li.menu-cat-list Teas
+              //- li.menu-cat-list Soups
         #menu-items-section
           h3 Coffee
-          .items
-            img(src='/images/Americano.jpg', alt='')
-            h4 Americano
-            h4 12oz
-            h4 £2.00
-            p Two shots of espresso over hot water
-            button Add+
-          .items
-            img(src='/images/Americano.jpg', alt='')
-            h4 Americano
-            h4 16oz
-            h4 £2.30
-            p Four shots of espresso over hot water
-            button Add+
-          .items
-            img(src='/images/Americano.jpg', alt='')
-            h4 Cappuccino
-            h4 12oz
-            h4 £2.45
-            p Two shots of espresso topped with steam milk and foam
-            button Add+
+          each item in products
+            .items
+              img(src='/images/'+item.pic, alt='')
+              h4 #{item.name}
+              h4 #{item.size}
+              h4 #{item.price}
+              p #{item.desc}
+              button Add+
+          //- .items
+          //-   img(src='/images/Americano.jpg', alt='')
+          //-   h4 Americano
+          //-   h4 16oz
+          //-   h4 £2.30
+          //-   p Four shots of espresso over hot water
+          //-   button Add+
+          //- .items
+          //-   img(src='/images/Americano.jpg', alt='')
+          //-   h4 Cappuccino
+          //-   h4 12oz
+          //-   h4 £2.45
+          //-   p Two shots of espresso topped with steam milk and foam
+          //-   button Add+
       #order
         h2 Order
         #form
