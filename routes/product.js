@@ -9,8 +9,9 @@ const dbName = 'stubucks';
 
 var products,categories;
 /* GET Menu page. */
-router.get('/menu/:catId', function(req,res,next){
+router.get('/:catId', function(req,res,next){
   console.log("I am going threw here")
+  var param = req.params.catId
   var client = new MongoClient(url);
   try {
     client.connect((err)=>{
@@ -18,10 +19,11 @@ router.get('/menu/:catId', function(req,res,next){
       const db = client.db(dbName);
 
       (async ()=>{
-        products = await db.collection('products').find({cat_id : req.params.catId}).toArray();
-        res.end(products);
+        products = await db.collection('products').find({cat_id : parseInt(req.params.catId)}).toArray();
+        console.log(products)
+        res.send(JSON.stringify(products));
         client.close();
-      })
+      })()
     })
   } catch (err) {
     

@@ -9,24 +9,24 @@ const dbName = 'stubucks';
 
 var products,categories;
 /* GET Menu page. */
-router.param('/:catId', function(req,res,next){
-  console.log("I am going threw here")
-  var client = new MongoClient(url);
-  try {
-    client.connect((err)=>{
-      assert.equal(null,err);
-      const db = client.db(dbName);
+// router.param('/:catId', function(req,res,next){
+//   console.log("I am going threw here")
+//   var client = new MongoClient(url);
+//   try {
+//     client.connect((err)=>{
+//       assert.equal(null,err);
+//       const db = client.db(dbName);
 
-      (async ()=>{
-        products = await db.collection('products').find({cat_id : req.params.catId}).toArray();
-        res.end(products);
-        client.close();
-      })
-    })
-  } catch (err) {
+//       (async ()=>{
+//         products = await db.collection('products').find({cat_id : req.params.catId}).toArray();
+//         res.end(products);
+//         client.close();
+//       })
+//     })
+//   } catch (err) {
     
-  }
-})
+//   }
+// })
 
 router.get('/', function(req, res, next) {
   var client = new MongoClient(url);

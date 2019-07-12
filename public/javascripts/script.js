@@ -7,15 +7,16 @@ const getProducts = (e) =>{
     xhttp.onreadystatechange = ()=>{
         console.log(xhttp.readyState,xhttp.status)
         if(xhttp.readyState == 4 && xhttp.status == 200){
-            console.log(xhttp.responseText)
+            var responseText = JSON.parse( xhttp.responseText)
+            console.log(responseText[0])
             let text = '';
-            for(let i = 0; i< xhttp.responseText.length; i++){
+            for(let i = 0; i< responseText.length; i++){
                 text += '<div class="items">'+
-                '<img src="/images/'+xhttp.responseText[i].pic+'" alt="">'+
-                '<h4>'+xhttp.responseText[i].name+'</h4>'+
-                '<h4>'+xhttp.responseText[i].size+'</h4>'+
-                '<h4>'+xhttp.responseText[i].price+'</h4>'+
-                '<p>'+xhttp.responseText[i].desc+'</p>'+
+                '<img src="/images/'+responseText[i].pic+'" alt="">'+
+                '<h4>'+responseText[i].name+'</h4>'+
+                '<h4>'+responseText[i].size+'</h4>'+
+                '<h4>'+responseText[i].price+'</h4>'+
+                '<p>'+responseText[i].desc+'</p>'+
                 '<button>Add+</button>'+
                 '</div>'
             }
