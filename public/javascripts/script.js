@@ -4,6 +4,9 @@ const getProducts = (e) =>{
     e.preventDefault();
     var xhttp = new XMLHttpRequest()
 
+    document.getElementById("item-title").innerText = e.target.innerText;
+    console.log(e.target.innerHTML);
+
     xhttp.onreadystatechange = ()=>{
         console.log(xhttp.readyState,xhttp.status)
         if(xhttp.readyState == 4 && xhttp.status == 200){
