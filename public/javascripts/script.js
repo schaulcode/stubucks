@@ -7,7 +7,7 @@ const getProducts = (e) =>{
     xhttp.onreadystatechange = ()=>{
         console.log(xhttp.readyState,xhttp.status)
         if(xhttp.readyState == 4 && xhttp.status == 200){
-            var responseText = JSON.parse( xhttp.responseText)
+            var responseText = JSON.parse(xhttp.responseText)
             console.log(responseText[0])
             let text = '';
             for(let i = 0; i< responseText.length; i++){
